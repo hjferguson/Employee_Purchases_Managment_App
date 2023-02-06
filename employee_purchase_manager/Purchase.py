@@ -4,4 +4,8 @@ class Purchase:
     def __init__(self,Item,Employee):
         self.Item = Item
         self.Employee = Employee
-        
+
+    def print_purchase(self):
+        print("Item: ",self.Item,"Employee: ",self.Employee)
+    
+            

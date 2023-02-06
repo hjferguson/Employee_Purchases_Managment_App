@@ -5,8 +5,8 @@ class ItemManager:
         self.item_list = []
         self.item_id = 200
     
-    def add_item(self,name,price):
-        temp = Item(name,price)
+    def add_item(self,name,price,quantity):
+        temp = Item(name,price,quantity)
         temp.item_id = self.item_id
         self.item_id += 1
         self.item_list.append(temp)

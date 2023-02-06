@@ -1,0 +1,11 @@
+DELETE this file once project is complete
+
+Cases:
+Testcase to ensure id doesn't overlap between classes
+Testcase, duplicate account creation, regardless of id 
+
+Todo in order:
+Add discount calc function to Employee
+Figure out purchase tracking
+Add controller class for all the managers
+Make Menu
