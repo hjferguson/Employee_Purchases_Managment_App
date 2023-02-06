@@ -4,7 +4,8 @@ class ItemManager:
     def __init__(self):
         self.item_list = []
         self.item_id = 200
-    
+        
+    #menu will sanitize
     def add_item(self,name,price,quantity):
         temp = Item(name,price,quantity)
         temp.item_id = self.item_id
