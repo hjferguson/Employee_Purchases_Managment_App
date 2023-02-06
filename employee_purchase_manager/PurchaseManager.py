@@ -7,7 +7,10 @@ class PurchaseManager:
         self.item_list = []
         self.purchase_id = 3000
     
-    #def add_purchase(self,Purchase):
+    def add_purchase(self,Purchase):
+        price = Purchase.Item.price
+        
+
         #add to employee class purchase total and discount total
         #grab the employee discount, do that math to the item price
         #then store that to employee total, and the amount discounted to employee discount

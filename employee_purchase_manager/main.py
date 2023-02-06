@@ -4,6 +4,6 @@ from EmployeeManager import EmployeeManager
 
 if __name__ == "__main__":
     EM = EmployeeManager()
-    EM.add_employee("Harlan", "Full-Time", 5)
-    EM.add_employee("Amanda","Part-Time",2)
+    EM.add_employee("Harlan", "manager", 5)
+    EM.add_employee("Amanda","hourly",2)
     EM.print_all_employees()

@@ -10,6 +10,7 @@ class EmployeeManager:
         self.employee_ID = 0
         self.employee_discount_ID = 1000
     
+    #menu will sanitize
     def add_employee(self,name,employee_type,years_worked):
         temp = Employee(name,employee_type,years_worked)
         #behind the scenes we also need to set the ID and discount ID
