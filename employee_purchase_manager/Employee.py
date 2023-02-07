@@ -29,5 +29,6 @@ class Employee:
         
     #individual object print so I can simply loop over the list to print all employees
     def print_employee(self):
-        s = self.id, self.name, self.emp_type, self.years_worked, self.total_purchased, self.total_discounts, self.emp_disc_num
-        print(s)
+        s = str(self.id) + ", " + str(self.name) + ", " + str(self.emp_type) + ", " + str(self.years_worked) 
+        s += ", " + str(self.total_purchased) + ", " + str(self.total_discounts) + ", " + str(self.emp_disc_num) + "\n"
+        return s

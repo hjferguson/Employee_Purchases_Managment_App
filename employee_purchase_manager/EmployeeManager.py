@@ -23,8 +23,10 @@ class EmployeeManager:
         
     
     def print_all_employees(self):
-        print("ID,Name,Employment type,years worked,total purchased, total discounts, discount id ")
+        s = ""
+        #print("ID,Name,Employment type,years worked,total purchased, total discounts, discount id ")
         for employee in self.employee_list:
-            employee.print_employee()
-    
+            s += employee.print_employee()
+        return s
+        
 
