@@ -10,7 +10,7 @@ class Employee:
         self.emp_disc_num = 0
         self.total_purchased = 0
         self.total_discounts = 0
-        self.employee_discount = self.calculate_discount() #this works
+        self.employee_discount = self.calculate_discount() 
     
     def calculate_discount(self):
         if(self.emp_type == "hourly"):

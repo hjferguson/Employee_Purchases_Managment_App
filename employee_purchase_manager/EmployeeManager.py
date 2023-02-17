@@ -20,6 +20,15 @@ class EmployeeManager:
         self.employee_discount_ID += 1
         #add to list
         self.employee_list.append(temp)
+
+    def employee_exsists(self,ID):
+        ID = int(ID)
+        for x in self.employee_list:
+            if(x.id == ID):
+                return x
+        return False
+
+
         
     
     def print_all_employees(self):

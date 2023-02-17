@@ -11,6 +11,13 @@ class ItemManager:
         temp.item_id = self.item_id
         self.item_id += 1
         self.item_list.append(temp)
+
+    def item_exsists(self,ID):
+        ID = int(ID)
+        for x in self.item_list:
+            if(x.item_id == ID):
+                return x
+        return False
     
     def print_all_items(self):
         for item in self.item_list:
