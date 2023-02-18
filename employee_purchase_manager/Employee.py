@@ -10,7 +10,7 @@ class Employee:
         self.emp_disc_num = 0
         self.total_purchased = 0
         self.total_discounts = 0
-        self.employee_discount = self.calculate_discount() 
+        self.employee_discount = self.calculate_discount()
     
     def calculate_discount(self):
         if(self.emp_type == "hourly"):
@@ -28,7 +28,14 @@ class Employee:
         
         
     #individual object print so I can simply loop over the list to print all employees
+    # def print_employee(self):
+    #     s = str(self.id) + ", " + str(self.name) + ", " + str(self.emp_type) + ", " + str(self.years_worked) 
+    #     s += ", " + str(self.total_purchased) + ", " + str(self.total_discounts) + ", " + str(self.emp_disc_num) + "\n"
+    #     #s += "Employee discount rate: " + str(self.employee_discount) + "\n"
+    #     return s
+
     def print_employee(self):
-        s = str(self.id) + ", " + str(self.name) + ", " + str(self.emp_type) + ", " + str(self.years_worked) 
-        s += ", " + str(self.total_purchased) + ", " + str(self.total_discounts) + ", " + str(self.emp_disc_num) + "\n"
+        s = "{:<5} {:<20} {:<15} {:<10} {:<15} {:<15} {:<10}\n".format(
+            self.id, self.name, self.emp_type, self.years_worked,
+            self.total_purchased, self.total_discounts, self.emp_disc_num)
         return s

@@ -21,6 +21,7 @@ class EmployeeManager:
         #add to list
         self.employee_list.append(temp)
 
+    
     def employee_exsists(self,ID):
         ID = int(ID)
         for x in self.employee_list:
@@ -28,14 +29,17 @@ class EmployeeManager:
                 return x
         return False
 
+    # def print_all_employees(self):
+    #     s = ""
+    #     print("ID, Name, Employment type, years worked, total purchased, total discounts, discount id ")
+    #     for employee in self.employee_list:
+    #         s += employee.print_employee()
+    #     return s
 
-        
-    
     def print_all_employees(self):
         s = ""
-        #print("ID,Name,Employment type,years worked,total purchased, total discounts, discount id ")
+        print("{:<5} {:<20} {:<15} {:<10} {:<15} {:<15} {:<10}".format(
+            "ID", "Name", "Employment type", "Years", "Total purchased", "Total discounts", "Discount ID"))
         for employee in self.employee_list:
             s += employee.print_employee()
         return s
-        
-

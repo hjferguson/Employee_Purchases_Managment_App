@@ -15,11 +15,24 @@ class ItemManager:
     def item_exsists(self,ID):
         ID = int(ID)
         for x in self.item_list:
+            
             if(x.item_id == ID):
                 return x
         return False
     
+    # def print_item(self):
+    #     print(self.item_id,self.name,self.price)
+
+    # def print_all_items(self):
+    #     print("Item number, Item name, Item cost")
+    #     for item in self.item_list:
+    #         item.print_item()
+
+    def print_item(self):
+        print("{:<12} {:<20} ${:.2f}".format(self.item_id, self.name, self.price))
+
     def print_all_items(self):
+        print("{:<12} {:<20} {:<12}".format("Item number", "Item name", "Item cost"))
         for item in self.item_list:
             item.print_item()
     

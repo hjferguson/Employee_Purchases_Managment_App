@@ -9,6 +9,5 @@ class Item:
         self.price = price
         self.quantity = quantity
         
-    
     def print_item(self):
-        print(self.item_id,self.name,self.cost)
+        print(self.item_id,self.name,self.price)
